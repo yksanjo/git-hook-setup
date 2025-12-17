@@ -1,5 +1,10 @@
 # git-hook-setup
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/python-3.8+-green.svg)
+![Status](https://img.shields.io/badge/status-active-success.svg)
+![GitHub](https://img.shields.io/github/stars/yksanjo/git-hook-setup?style=social)
+
 Simplify git hook management for code quality. One-command setup for pre-commit hooks, commit message validation, and more.
 
 ## Features
