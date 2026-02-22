@@ -1,120 +1,84 @@
 # git-hook-setup
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python](https://img.shields.io/badge/python-3.8+-green.svg)
-![Status](https://img.shields.io/badge/status-active-success.svg)
-![GitHub](https://img.shields.io/github/stars/yksanjo/git-hook-setup?style=social)
+## Detailed Description
 
-Simplify git hook management for code quality. One-command setup for pre-commit hooks, commit message validation, and more.
+git-hook-setup is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-## Features
+## Problem Statement
 
-- 🚀 One-command setup for git hooks
-- 📝 Pre-commit hooks for linting, formatting, and testing
-- ✅ Commit message validation (conventional commits)
-- 🔧 Support for multiple languages (Python, JavaScript, etc.)
-- 🎨 Multiple linter/formatter options
-- 🔄 Easy hook management (install, list, remove)
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-## Installation
+## Solution Overview
 
-```bash
-pip install -e .
+Summarize the architecture, core modules, and runtime behavior at a high level.
+
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
 ```
 
-Or install globally:
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
+
 ```bash
-pip install .
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt  # or: pip install -e .[dev]
+pytest
 ```
 
 ## Usage
 
-### Install Pre-commit Hook
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-```bash
-git-hook-setup install pre-commit --linter ruff
-```
+## Quality Standards
 
-### Install Commit Message Hook
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-```bash
-git-hook-setup install commit-msg
-```
+## Security
 
-### List Installed Hooks
-
-```bash
-git-hook-setup list
-```
-
-### Remove Hooks
-
-```bash
-git-hook-setup remove pre-commit
-```
-
-## Supported Linters/Formatters
-
-### Python
-- **ruff** - Fast Python linter
-- **black** - Python code formatter
-- **pylint** - Python linter
-- **flake8** - Python style checker
-
-### JavaScript/TypeScript
-- **eslint** - JavaScript linter
-- **prettier** - Code formatter
-
-### General
-- **shellcheck** - Shell script linter
-- **custom** - Your own script
-
-## Examples
-
-### Python Project with Ruff
-
-```bash
-git-hook-setup install pre-commit --linter ruff
-```
-
-### JavaScript Project with ESLint
-
-```bash
-git-hook-setup install pre-commit --linter eslint
-```
-
-### Multiple Hooks
-
-```bash
-# Install linting
-git-hook-setup install pre-commit --linter ruff
-
-# Install commit message validation
-git-hook-setup install commit-msg
-
-# Install testing hook
-git-hook-setup install pre-commit --test
-```
-
-## Hook Types
-
-### Pre-commit
-Runs before each commit to check code quality:
-- Linting
-- Formatting
-- Testing
-- Type checking
-
-### Commit-msg
-Validates commit messages follow conventional commit format:
-- `feat:`, `fix:`, `docs:`, `style:`, `refactor:`, `test:`, `chore:`
-
-## License
-
-MIT License - see LICENSE file for details
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
 ## Contributing
 
-Contributions welcome! Please open an issue or submit a pull request.
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
 
+## Roadmap
 
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
+
+## License
+
+This project is released under the MIT License.
