@@ -1,5 +1,12 @@
 # git-hook-setup
 
+Production-grade project scaffold focused on reliability, maintainability, and fast onboarding.
+
+[![CI](https://img.shields.io/github/actions/workflow/status/yksanjo/git-hook-setup/ci.yml?branch=main&label=ci)](https://github.com/yksanjo/git-hook-setup/actions)
+![License](https://img.shields.io/github/license/yksanjo/git-hook-setup)
+![Last Commit](https://img.shields.io/github/last-commit/yksanjo/git-hook-setup)
+![Repo Size](https://img.shields.io/github/repo-size/yksanjo/git-hook-setup)
+
 ## Detailed Description
 
 git-hook-setup is maintained as an industry-grade software project with production-ready engineering practices.  
